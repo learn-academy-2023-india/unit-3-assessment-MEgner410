@@ -5,8 +5,18 @@
 }
 .cardStyles {
   border: 1px solid black;
+  border-radius: 8px;
   width: 70px;
   height: 95px;
   margin: 10px;
   padding: 10px;
+  text-align: center;
+  font-family: Arial , sans-serif;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0,  0, 3);
 }
