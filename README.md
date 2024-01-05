@@ -27,31 +27,61 @@ PRs should be posted _before_ class begins on Tuesday, January 2, 2024.
 
 ### React Challenge
 
-1. React Debugging: The Card Draw React application has three (3) errors that need to be fixed. Use the console and error messages to guide you to the solution.
+1. React Debugging: The Card Draw React application has three (3) errors that need to be fixed.
+ Use the console and error messages to guide you to the solution.
+ 
+  A opening "<div>" tag was missing and needed to be added, then I removed a "return function that was not needed, then added a parenthesis for the return statment that wasnt included. Made changes but still showing faults, found the fault, was missing my export, added it back in and it runs normaly.
 
 2. React Feature: Add functionality to the `Return Cards and Shuffle Deck` button using the `shuffle` function to reset the Card Draw application to its original state.
 
-3. React Concepts: Add comments to the sever (7) notations in the `drawCard` function describing in detail the functionality of the following line of code.
+had to restore the uncommented out line the resets the hand. 
+const shuffle = () => {
+    setHand([]);
+}
+this will clear the 'hand' state when the return cards and shuffle deck is used.
 
-4. STRETCH (optional): Add stylings of your choice to the application. Ensure the styling does not interfere with the card draw functionality.
+
+3. React Concepts: Add comments to the seven (7) notations in the `drawCard` function describing in detail the functionality of the following line of code.
+
+added the answers on the app.js file
+
+
+
+4. STRETCH (optional): Add stylings of your choice to the application. Ensure the styling does not interfere with the card draw functionality. 
+
+added some border and hover stylings to the cards
 
 ### Interview Practice Questions
 
 1. What are three (3) syntax difference between HTML and JSX?
 
+ Event handlers in HTML use 'onclick','onchange' where in JSX, cammelCase naming are used in JSX while the value is produced from the function.
+
+ the class of a element is definded by the 'class' atribute in html.
+ <div class="my-contanier">Content</div>
+
+were as in JSX 'className' would be the equal attribute casue 'class; is the reserved key-word in JavaScript.
+
+< div className="my-contanier">Content</div>
+
+JSX an object accepts the 'style' object with a cammelCase property in CSS, 
+In HTML a string 'style' is typically used 
+
 2. What is yarn? What file(s) are modified when you run the command yarn in your terminal?
 
-3. What is the difference between state values and props in React?
+In Javascript, yarn is the package manager. it was develped by facebook and is often used insted of NPM( Node Package Manager). Once Yarn is ran in the terminal is starts to look for a file called package.json. if it is in the terminal yarns start to run dependencies in the file and the creates a yarn.lock file. this will lock down version of the installed packages
+
+3. What is the difference between state values and props in React?  State and  Proops manage the data in the componnet in react. Stae uses multiable data within the componet, changes to state cause a re-render of the component. In Proops it is  used to pass the data, it uses a parent component to a child component. even thought they both have diffrent funtions they are both used to manage and pass data together effectivly.
 
 4. STRETCH (optional): What is the difference between a div tag and a span tag?
 
 ### Looking Ahead: Terms for Next Unit
 
-1. Object-oriented programming:
+1. Object-oriented programming: A software that that revoles around the concept of "objects", that may contain data that are called forms, attributes, and code. A blueprint is formed from these objects which is a instance of classes. the 4 key principles are Encapsulation, Polymorphism, Inheritance, and Abstration. these functions help with code being easier to understand and maintain.
 
-2. Ruby:
+2. Ruby: in the 1990's buy combining  Perl's syntex and Smalltalk's object orientd priniples, Yukihiro "Matz" Matsumoto created a dynamic reflective OOP. the Ruby prograhm excelled in simplicty and productivity making it easier to use with a better readabilty. Rails Framework, Community and Ecosystem, RubyGems, Metaprogrming, Syentex and Readabilty, Object-Oriented, Garbage Collection, and Dynamic Typing make up, Ruby's key features.
 
-3. Ruby Hashes:
+3. Ruby Hashes: hasshes orginize data and retrive it when needed in a manner that is easy to understand. key-value pairs are storred in this data struture. it may be also refferd to as a associative array, map, or dictionary in other languages of programming.
 
 ---
 
